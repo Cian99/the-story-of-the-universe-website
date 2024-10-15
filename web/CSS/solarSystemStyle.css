@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000033;
+    min-height: 1500px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#bg{
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+#sun{
+    width: 25%;
+    height: auto;
+    position: fixed;
+    z-index: 3;
+}
+#sun:hover{
+    transition: 1s;
+    width: 30%;
+}
+#earth{
+    width: 5%;
+    height: auto;
+    margin-left: 55%;
+    margin-top: 15%;
+    z-index: 2;
+}
+#earth:hover{
+    transition: 1s;
+    width: 10%;
+}
+
+#moon{
+    width: 1%;
+    height: auto;
+    margin-left: 50%;
+    margin-top: 8%;
+}
+#moon:hover{
+    transition: 1s;
+    width: 4%;
+}
+
+#text{
+    color: white;
+    font-size: 300%;
+    z-index: 5;
+    text-align: center;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+}
+
+#text:hover{
+    transition: 1s;
+    color: gold;
+}
+
+.tester{
+    position: fixed;
+}
+
+#mercury{
+    width: 3%;
+    height: auto;
+    margin-left: 40%;
+    margin-top: -20%;
+    z-index: 2;
+}
+#mercury:hover{
+    transition: 1s;
+    width: 8%;
+}
+#uranus{
+    width: 6%;
+    height: auto;
+    margin-left: 85%;
+    margin-top: -32%;
+    z-index: 2;
+}
+#uranus:hover{
+    transition: 1s;
+    width: 12%;
+}
+#jupiter{
+    width: 10%;
+    height: auto;
+    margin-left: 80%;
+    margin-top: 30%;
+    z-index: 2;
+}
+#jupiter:hover{
+    transition: 1s;
+    width: 14%;
+}
+#venus{
+    width: 2%;
+    height: auto;
+    margin-left: -40%;
+    margin-top: 20%;
+    z-index: 2;
+}
+#venus:hover{
+    transition: 1s;
+    width: 5%;
+}
+#mars{
+    width: 2.5%;
+    height: auto;
+    margin-left: -55%;
+    margin-top: -15%;
+    z-index: 2;
+}
+#mars:hover{
+    transition: 1s;
+    width: 6%;
+}
+#saturn{
+    width: 12%;
+    height: auto;
+    margin-left: -75%;
+    margin-top: -30%;
+    z-index: 2;
+}
+#saturn:hover{
+    transition: 1s;
+    width: 20%;
+}
+#neptune{
+    width: 8%;
+    height: auto;
+    margin-left: -85%;
+    margin-top: 32%;
+    z-index: 2;
+}
+#neptune:hover{
+    transition: 1s;
+    width: 14%;
+}
+
+#btn{
+    width: 100%;
+    height: auto;
+}
+.link:hover{
+    transition: 1s;
+    transform: rotate(-45deg);
+}
+
+.link{
+    width: 40px;
+    height: auto;
+    text-align: center;
+    z-index: 5;
+    font-size: 100%;
+    position: fixed;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    color: white;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+}
+.uplink{
+    width: 40px;
+    height: auto;
+    text-align: center;
+    z-index: 5;
+    font-size: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    color: white;
+}
+.uplink:hover{
+    width: 35px;
+    transition: 1s;
+}
+.uplink a{
+    text-decoration: none;
+    color: white;
+}
+
+/* iPad responsiveness */
+@media only screen and (max-width:999px) and (min-width:768px){
+    #text{
+        font-size: 300%;
+    }
+    #sun{
+        width: 40%;
+    }
+    #sun:hover{
+        width: 45%;
+    }
+    #earth{
+        width: 10%;
+        margin-top: 50%;
+    }
+    #earth:hover{
+        width: 15%;
+    }
+    #moon{
+        width: 3%;
+        margin-top: 65%;
+    }
+    #moon:hover{
+        width: 4%;
+    }
+    #mercury{
+        width: 6%;
+        margin-top: -50%;
+    }
+    #mercury:hover{
+        width: 8%;
+    }
+    #uranus{
+        width: 10%;
+        margin-top: -70%;
+    }
+    #uranus:hover{
+        width: 12%;
+    }
+    #jupiter{
+        width: 15%;
+        margin-top: 80%;
+    }
+    #jupiter:hover{
+        width: 18%;
+    }
+    #venus{
+        width: 5%;
+        margin-top: 40%;
+    }
+    #venus:hover{
+        width: 8%;
+    }
+    #mars{
+        width: 4%;
+        margin-top: -40%;
+    }
+    #mars:hover{
+        width: 6%;
+    }
+    #saturn{
+        width: 18%;
+        margin-top: -80%;
+    }
+    #saturn:hover{
+        width: 20%;
+    }
+    #neptune{
+        width: 12%;
+        margin-top: 70%;
+    }
+    #neptune:hover{
+        width: 15%;
+    }
+}
+
+/* Phone responsiveness */
+@media only screen and (max-width:767px) and (min-width:1px){
+    #text{
+        font-size: 200%;
+    }
+    #sun{
+        width: 40%;
+    }
+    #sun:hover{
+        width: 45%;
+    }
+    #earth{
+        width: 10%;
+        margin-top: 50%;
+    }
+    #earth:hover{
+        width: 15%;
+    }
+    #moon{
+        width: 3%;
+        margin-top: 65%;
+    }
+    #moon:hover{
+        width: 4%;
+    }
+    #mercury{
+        width: 6%;
+        margin-top: -50%;
+    }
+    #mercury:hover{
+        width: 8%;
+    }
+    #uranus{
+        width: 10%;
+        margin-top: -70%;
+    }
+    #uranus:hover{
+        width: 12%;
+    }
+    #jupiter{
+        width: 15%;
+        margin-top: 80%;
+    }
+    #jupiter:hover{
+        width: 18%;
+    }
+    #venus{
+        width: 5%;
+        margin-top: 40%;
+    }
+    #venus:hover{
+        width: 8%;
+    }
+    #mars{
+        width: 4%;
+        margin-top: -40%;
+    }
+    #mars:hover{
+        width: 6%;
+    }
+    #saturn{
+        width: 18%;
+        margin-top: -80%;
+    }
+    #saturn:hover{
+        width: 20%;
+    }
+    #neptune{
+        width: 12%;
+        margin-top: 70%;
+    }
+    #neptune:hover{
+        width: 15%;
+    }
+}

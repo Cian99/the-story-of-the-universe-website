@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+  width: 125px;
+  border: none;
+  color: black;
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #ccb1ff;
+  font-size: 14px;
+  border-color: #ccb1ff;
+  border-radius: 20%;
+}
+button:hover {
+  background-color: #9933ff;
+  color: white;
+  //border-style: outset;
+}
+button.dropdownButton:hover + ul.dropdownMenu, ul.dropdownMenu:hover{
+    display: block;
+    position: absolute;
+    padding: 10px;
+    //background-color: #bb98ff;
+    background-image: linear-gradient(#ccb1ff, #bb98ff);
+    z-index: 999;
+    text-align: center;
+}
+
+nav{
+    position: static;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #ccb1ff;
+}
+
+nav ul{
+    padding: 10px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 10px 25px;
+}
+
+.dropdownMenu{
+    text-align: center;
+    width: 200px;
+    margin-left: -35px;
+}
+
+ul li ul.dropdownMenu li{
+    display: block;
+}
+ul li ul.dropdownMenu{
+    z-index: 99;
+    display: none;
+}
+
+/*
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.25% 5%;
+    transition: padding 1s;
+}
+.sticky img{
+    width: 0px;
+    height: 0px;
+}
+*/
+
+.homeInfo{
+    background-color: #ffff99;
+    height: auto;
+    width: 15%;
+    position: absolute;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    padding: 10px;
+    border: double;
+    border-color: #ccb1ff;
+    z-index: -1;
+}
+
+.text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+.textjust{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+    font-size: 20px;
+}
+.tfox{
+    color: darkcyan;
+}
+.tcoyote{
+    color: darksalmon;
+}
+
+.logo{
+    height: auto;
+    width: 50%;
+    margin: 20px 0;
+}
+.logofooter{
+    height: auto;
+    width: 5%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-right: 47.5%;
+    margin-left: 47.5%;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer{
+    margin-bottom: 0px;
+    height: auto;
+    background-color: #ccb1ff;
+    padding: 5px;
+    text-align: center;
+}
+.fleft{
+    margin-top: 125px;
+    text-align: left;
+    margin-left: 10%;
+    font-size: 20px;
+    width: 30%;
+    float: left;
+}
+.fcenter{
+    border-left: 0.5px solid black;
+    height: 400px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.fright{
+    //margin-left: 60%;
+    text-align: left;
+    width: 30%;
+    float: right;
+    margin-right: 7.5%;
+    margin-top: 75px;
+}
+.copyright{
+    text-align: left;
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+
+a{
+    color: black;
+}
+
+a:hover {
+    color: black;
+    background-color: wheat;
+}
+
+
+.video{
+    text-align: center;
+}
+
+.facts{
+    width: 75%;
+    margin-left: 12.5%;
+    border-style: inset;
+    border-width: thick;
+    border-color: #ccb1ff;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    background-image: url('../Images/universe.jpg');
+    background-size: cover;
+}
+.facts p:hover{
+    transition: 1s;
+    color: gold;
+    text-shadow: 0 0 10px gold, 0 0 50px gold, 0 0 100px gold, 0 0 200px gold;
+}
+
+.mural{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anchor{
+    position: absolute;
+    transform: translateY(-50vh);
+}
+
+.uplink{
+    width: 40px;
+    height: auto;
+    text-align: center;
+    z-index: 5;
+    font-size: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    color: white;
+}
+.uplink:hover{
+    width: 35px;
+    transition: 1s;
+}
+.uplink a{
+    text-decoration: none;
+    color: black;
+}
+.uplink a:hover{
+    background-color: transparent;
+}
+#btn{
+    width: 100%;
+    height: auto;
+}
+
+/* iPad responsiveness */
+@media only screen and (max-width:999px) and (min-width:768px){
+    .content{
+        width: 90%;
+    }
+    .homecontent{
+        margin-top: 125px;
+    }
+    .logo{
+        width: 75%;
+    }
+    button{
+        width: 125px;
+        padding: 15px 10px;
+    }
+    .dropdownMenu{
+        width: 200px;
+        margin-left: -35px;
+    }
+    .homeInfo{
+        width: 80%;
+        margin-top: 0;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+    iframe{
+        height: 400px;
+        width: 75%;
+    }
+    h1{
+        font-size: px;
+    }
+    h2{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    text{
+        font-size: px;
+    }
+    p{
+        font-size: px;
+    }
+    .textjust{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .mural{
+        width: 80%;
+    }
+    .fleft{
+        font-size: 16px;
+    }
+    .fcenter{
+        margin-right: 5%;
+    }
+    .fright{
+        width: 40%;
+        margin-right: 0%;
+    }
+    .copyright{
+     
+        font-size: 10px;
+    }
+    .logofooter{
+        width: 7.5%;
+        margin-right: 46.25%;
+        margin-left: 46.25%;
+    }
+}
+
+/* Phone responsiveness */
+@media only screen and (max-width:767px) and (min-width:1px){
+    .content{
+        width: 100%;
+    }
+    .homecontent{
+        margin-top: 125px;
+    }
+    .logo{
+        width: 90%;
+    }
+    button{
+        width: 100px;
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+    .dropdownMenu{
+        width: 175px;
+        margin-left: -35px;
+    }
+    .homeInfo{
+        width: 80%;
+        margin-top: 0;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+    iframe{
+        height: 300px;
+        width: 75%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 16px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .textjust{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 16px;
+    }
+    .mural{
+        width: 80%;
+    }
+    .fleft{
+        font-size: 16px;
+        width: 80%;
+        margin-top: 90px;
+        text-align: center;
+    }
+    .fcenter{
+        width: 0px;
+        height: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        border-bottom: 0.5px solid black;
+        width: 25%;
+        margin-top: 50px;
+        margin-left: 37.5%;
+    }
+    .fright{
+        width: 80%;
+        margin-right: 0%;
+    }
+    .copyright{
+     
+        font-size: 10px;
+    }
+    .logofooter{
+        width: 7.5%;
+        margin-right: 46.25%;
+        margin-left: 46.25%;
+    }
+}

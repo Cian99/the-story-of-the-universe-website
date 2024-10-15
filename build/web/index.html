@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--Title of the Page-->
+        <title>The Story of the Universe - Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Embedding the external stylesheet-->
+        <link rel='stylesheet' href='CSS/StyleSheet.css'>
+        <link rel="icon" href="Images/Logo.png">
+        
+    </head>
+    
+    <body>
+        
+        <nav id="navbar">
+                <img src="Images/Logo w Irish.png" class="logo">
+                <ul id="menu">
+                    <li><button onclick="location.href='index.html'">HOME</button></li>
+                    <li><button onclick="location.href='info.html'">INFORMATION</button></li>
+                    <li><button class="dropdownButton" onclick="location.href='resources.html'">RESOURCES ↓</button>
+                        <ul class="dropdownMenu">
+                            <li><button onclick="location.href='teacherResources.html'">Teacher Resources</button></li>
+                            <li><button onclick="location.href='creationStories.html'">Creation Stories</button></li>
+                            <li><button onclick="location.href='drama.html'">Drama</button></li>
+                            <li><button onclick="location.href='addStories.html'">Additional Stories</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="dropdownButton" onclick="location.href='contact.html'">AN GÁIRDÍN ↓</button>
+                        <ul class="dropdownMenu">
+                            <li><button onclick="location.href='contact.html#contact'">Contact</button></li>
+                        </ul>
+                    </li>
+                    <li><button onclick="location.href='mural.html'">THE MURAL</button></li>
+                    <li><button onclick="location.href='oursolarsystem.html'">OUR SOLAR SYSTEM</button></li>
+                </ul>
+            </nav>
+        
+        <br><br>
+        
+        <h1></h1>
+        
+        <div class="homeInfo"><br>This website is intended for primary school teachers to use in class with their students<br><br></div>
+        
+        <div class="homecontent"></div>
+        
+        <div class="content">
+            
+        <p class="uplink"><a href="#"><img src="Images/uparrow.png" id="btn"></a></p>
+            
+        <h2>The Story of the Universe Educational Video:</h2><br>
+        
+        <div class="video">
+            <iframe width="75%" height="500" src="https://www.youtube.com/embed/1TBhpL3jmLE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        
+        <br>
+        
+        <div class="text"><h2>Fun Facts:<br></h2><p>(Try Hovering Over The Text)</p></div>
+        
+        <div class="facts">
+            <br><br><p>✩    The universe is really, really big and contains all the stars, planets, and galaxies that we know of.</p><br><br><br>
+            <p>✩    The universe was created by the Big Bang around 13.8 billion years ago.</p><br><br><br>
+            <p>✩    Our solar system is just a small part of the universe and it is made up of the sun, eight planets and their moons.</p><br><br><br>
+            <p>✩    The Earth is just one planet in the solar system, and it is our home.</p><br><br><br>
+            <p>✩    Scientists are still learning new things about the universe all the time, and there is still so much that we don't know yet.</p><br><br>
+        </div>
+        
+        </div>
+        
+        <br><br>
+        
+        
+        <div class="footer">
+            <div>
+            <div class="fleft"><b>An Gáirdín – Organic Garden & Ecology Centre</b><br><br><br>St.Brigid’s Road, Portumna, Co.Galway, Ireland.<br><br>Tel. +353 (0)90 9741689<br><br>Email: angairdin1@gmail.com<br><br></div>
+            <div class="fcenter"></div>
+            <div class="fright"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4791.697115833066!2d-8.218356488356923!3d53.094954742562116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485c8a725d8f84d9%3A0xd48b84d37f636605!2sAn%20Gairdin%20Organic%20%26%20Ecology%20Centre!5e0!3m2!1sen!2sie!4v1691764434668!5m2!1sen!2sie" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            <br><br><br><img src="Images/Logo.png" class="logofooter"><br><br>
+            <div class="copyright">Copyright © 2023 An Gáirdín – Organic Garden & Ecology Centre | Created by Cian Leahy Web Design c.leahywebdesign@gmail.com</div>
+        </div>
+        
+        <!-- JS is needed to make a sticky navbar for the webpage --
+        <script>
+            
+            // variables for the navbar and menu
+            var navbar = document.getElementById("navbar");
+            var menu = document.getElementById("menu");
+            var length = document.getElementById("length");
+            
+            var h1Element = document.querySelector("h1");
+            
+            // when you scroll the funtion will be called
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    navbar.classList.add("sticky");
+                    h1Element.style.paddingTop = '15%';
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                    h1Element.style.paddingTop = '0px';
+                }
+            };
+            
+        </script>
+        -->
+    </body>
+</html>

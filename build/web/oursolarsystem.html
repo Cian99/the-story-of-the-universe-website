@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Title of the Page-->
+        <title>The Story of the Universe - Our Solar System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Embedding the external stylesheet-->
+        <link rel='stylesheet' type="text/css" href='CSS/solarSystemStyle.css'>
+        <link rel="icon" href="Images/Logo.png">
+        
+    </head>
+    
+    <body>
+        <div class='tester'>
+            <img src="Images/Solar System/Outer space.jpg" id="bg">
+        </div>
+        <p class="link"><a href="index.html"><img src="Images/rocket.png" id="btn"><br>BACK</a></p>
+        <p class="uplink"><a href="#"><img src="Images/uparrow.png" id="btn"></a></p>
+        <section>
+            <img src="Images/Solar System/Sun.png" id="sun" title="This is the Sun">
+            <h2 id="text">(Tip: try hovering <br>over the planets)</h2>
+        </section>
+        <section>
+            <h2 id="text">The Sun</h2>
+        </section>
+        <section>
+            <h2 id="text">Lies at the center of</h2>
+        </section>
+        <section>
+            <h2 id="text">Our<br>Solar System</h2>
+        </section>
+        <section>
+            <h2 id="text">Everything revolves<br>around it</h2>
+        </section>
+        <section>
+            <h2 id="text">Including</h2>
+        </section>
+        <section>
+            <h2 id="text">Earth</h2>
+            <img src="Images/Solar System/Earth.png" id="earth" title="This is the Earth">
+        </section>
+        <section>
+            <h2 id="text">And its Moon</h2>
+            <img src="Images/Solar System/moon.png" id="moon" title="This is the Moon">
+        </section>
+        <section>
+            <h2 id="text">Mercury</h2>
+            <img src="Images/Solar System/Mercury.png" id="mercury" title="This is Mercury">
+        </section>
+        <section>
+            <h2 id="text">Uranus</h2>
+            <img src="Images/Solar System/Uranus.png" id="uranus" title="This is the Uranus">
+        </section>
+        <section>
+            <h2 id="text">Jupiter</h2>
+            <img src="Images/Solar System/Jupiter.png" id="jupiter" title="This is Jupiter">
+        </section>
+        <section>
+            <h2 id="text">Venus</h2>
+            <img src="Images/Solar System/Venus.png" id="venus" title="This is Venus">
+        </section>
+        <section>
+            <h2 id="text">Mars</h2>
+            <img src="Images/Solar System/Mars.png" id="mars" title="This is Mars">
+        </section>
+        <section>
+            <h2 id="text">Saturn</h2>
+            <img src="Images/Solar System/Saturn.png" id="saturn" title="This is Saturn">
+        </section>
+        <section>
+            <h2 id="text">Neptune</h2>
+            <img src="Images/Solar System/Neptune.png" id="neptune" title="This is Neptune">
+        </section>
+        <section>
+            <h2 id="text">OUR SOLAR<br>SYSTEM</h2>
+            <img src="Images/Solar System/Earth.png" id="earth" title="This is the Earth">
+            <img src="Images/Solar System/moon.png" id="moon" title="This is the Moon">
+            <img src="Images/Solar System/Mercury.png" id="mercury" title="This is Mercury">
+            <img src="Images/Solar System/Uranus.png" id="uranus" title="This is Uranus">
+            <img src="Images/Solar System/Jupiter.png" id="jupiter" title="This is Jupiter">
+            <img src="Images/Solar System/Venus.png" id="venus" title="This is Venus">
+            <img src="Images/Solar System/Mars.png" id="mars" title="This is Mars">
+            <img src="Images/Solar System/Saturn.png" id="saturn" title="This is Saturn">
+            <img src="Images/Solar System/Neptune.png" id="neptune" title="This is Neptune">
+        </section>
+        
+        <script>
+            var bg = document.getElementById("bg");
+            var sun = document.getElementById("sun");
+            var earth = document.getElementById("earth");
+            var moon = document.getElementById("moon");
+            var text = document.getElementById("text");
+            
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+                
+                sun.style.transform = 'rotate(15 deg)';
+                //bg.style.top = value *0.5 + 'px';
+                //text.style.top = -value *0.5 + 'px';
+            });
+        </script>
+    </body>
+</html>

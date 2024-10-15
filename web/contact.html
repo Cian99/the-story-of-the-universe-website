@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Title of the Page-->
+        <title>The Story of the Universe - An Gáirdín</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Embedding the external stylesheet-->
+        <link rel='stylesheet' href='CSS/StyleSheet.css'>
+        <link rel="icon" href="Images/Logo.png">
+        
+    </head>
+    
+    <body>
+             
+        <nav id="navbar">
+                <img src="Images/Logo w Irish.png" class="logo">
+                <ul id="menu">
+                    <li><button onclick="location.href='index.html'">HOME</button></li>
+                    <li><button onclick="location.href='info.html'">INFORMATION</button></li>
+                    <li><button class="dropdownButton" onclick="location.href='resources.html'">RESOURCES ↓</button>
+                        <ul class="dropdownMenu">
+                            <li><button onclick="location.href='teacherResources.html'">Teacher Resources</button></li>
+                            <li><button onclick="location.href='creationStories.html'">Creation Stories</button></li>
+                            <li><button onclick="location.href='drama.html'">Drama</button></li>
+                            <li><button onclick="location.href='addStories.html'">Additional Stories</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="dropdownButton" onclick="location.href='contact.html'">AN GÁIRDÍN ↓</button>
+                        <ul class="dropdownMenu">
+                            <li><button onclick="location.href='contact.html#contact'">Contact</button></li>
+                        </ul>
+                    </li>
+                    <li><button onclick="location.href='mural.html'">THE MURAL</button></li>
+                    <li><button onclick="location.href='oursolarsystem.html'">OUR SOLAR SYSTEM</button></li>
+                </ul>
+            </nav>
+        
+        <br><br>
+        
+        <h1>An Gáirdín</h1><br>
+        
+        <img src="Images/AnGairdin.png" style="width: 100%;">
+        
+        <div class="content">
+            
+            <p class="uplink"><a href="#"><img src="Images/uparrow.png" id="btn"></a></p>
+        
+        <span class="anchor" id="contact"></span>
+        <br><h2>Contact An Gáirdín Organic Garden and Ecology Centre At:</h2>
+        
+        <p class="text">An Gáirdín – Organic Garden & Ecology Centre <br> St.Brigid’s Road, Portumna, Co.Galway, Ireland.</p>
+        <p class="text">Tel. +353 (0)90 9741689</p>
+        <p class="text">email: angairdin1@gmail.com</p>
+        
+        <br><h2>About An Gáirdín Organic Garden and Ecology Centre</h2><br>
+        
+        <p class="textjust">In 1994, a small group of us Mercy Sisters in Clonfert Diocese came together to find new ways of expressing our commitment to the Earth. 
+            We were awakening to the vision of Earth as a living organism, a great web of interconnectedness and interdependent life. 
+            We shared the desire to rediscover together who we humans are as a strand of this magnificent web. 
+            You could say we shared the desire to ‘come home’ to Earth after a long absence. 
+            And so An Gáirdín came into being!</p>
+            
+        <p class="textjust">At that time the site of the Rural Domestic School here in Portumna, 
+            which had taught agriculture and traditional crafts and skills for a hundred years, 
+            became available to us. “To make again a garden of this place” (Elisabeth Roberts) 
+            became our motto as we set out to learn to live in communion with one another and with the great diversity of life around us.</p>
+
+        <p class="textjust">The garden needed some rest and healing following its years of generous production. 
+            It had time to lie fallow and renew itself before we began to do some organic growing. We welcomed back the hens and ducks. 
+            Our house was built on the site of the old dairy. We carefully sourced natural, renewable and recycled material. 
+            We installed the geo-thermal ground source heating system, a very new technology then.
+
+        <p class="textjust">Currently, our Education Programme and our Organic Growing are facilitated by a team of six people, two of whom are Mercy Sisters. 
+            As the need arises we can call on volunteers. A small group of those who share An Gáirdín’s vision meet regularly for support, study and reflection. 
+            Our most recent undertaking has been the provision of a building, adequate to meet the needs of our expanding range of courses and events. 
+            This has been a work of collaboration and every aspect of the building is a demonstration of sustainable practice.</p><br>
+        
+        
+        <p class="text">Copyright © 2023 All content copyright <a href='http://angairdin.ie/'>An Gáirdín</a></p>
+        
+        </div>
+        
+        <br><br>
+        
+        <div class="footer">
+            <div>
+            <div class="fleft"><b>An Gáirdín – Organic Garden & Ecology Centre</b><br><br><br>St.Brigid’s Road, Portumna, Co.Galway, Ireland.<br><br>Tel. +353 (0)90 9741689<br><br>Email: angairdin1@gmail.com<br><br></div>
+            <div class="fcenter"></div>
+            <div class="fright"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4791.697115833066!2d-8.218356488356923!3d53.094954742562116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485c8a725d8f84d9%3A0xd48b84d37f636605!2sAn%20Gairdin%20Organic%20%26%20Ecology%20Centre!5e0!3m2!1sen!2sie!4v1691764434668!5m2!1sen!2sie" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            <br><br><br><img src="Images/Logo.png" class="logofooter"><br><br>
+            <div class="copyright">Copyright © 2023 An Gáirdín – Organic Garden & Ecology Centre | Created by Cian Leahy Web Design c.leahywebdesign@gmail.com</div>
+        </div>
+        
+        <!--
+        <div class="footer">
+            <img src="Images/Logo.png" class="logo">
+        </div>
+        -->
+        
+        <!-- JS is needed to make a sticky navbar for the webpage 
+        <script>
+             
+            // variables for the navbar and menu
+            var navbar = document.getElementById("navbar");
+            var menu = document.getElementById("menu");
+            var length = document.getElementById("length");
+            
+            var h1Element = document.querySelector("h1");
+            
+            // when you scroll the funtion will be called
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    navbar.classList.add("sticky");
+                    h1Element.style.paddingTop = '15%';
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                    h1Element.style.paddingTop = '0px';
+                }
+            };
+            
+        </script>
+        -->
+        
+    </body>
+</html>
